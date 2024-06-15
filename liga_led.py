@@ -2,7 +2,7 @@ import pyfirmata
 import time
 import streamlit as st
 
-porta = '/dev/ttyACM1'
+porta = '/dev/ttyACM0'
 
 
 
