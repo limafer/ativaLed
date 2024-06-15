@@ -2,10 +2,7 @@ import pyfirmata
 import time
 import streamlit as st
 
-porta = '/dev/ttyACM0'
-
-
-
+porta = st.sidebar.selectbox('Selecione a porta',['/dev/ttyACM0','/dev/ttyACM1'])
 
 try:
     board = pyfirmata.Arduino(porta)
